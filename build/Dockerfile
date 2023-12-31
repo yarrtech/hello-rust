@@ -1,6 +1,11 @@
 FROM ubuntu:24.04 AS base
 RUN apt update
 RUN apt install -y make
+RUN apt install -y curl
 
-FROM base AS workspace
+FROM base AS environment
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+FROM environment AS workspace
 WORKDIR /app
