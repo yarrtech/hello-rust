@@ -2,5 +2,5 @@
 [workspace]
 
 members=[
-    "01-hello",
+    "01-hello", "02-unit-test",
 ]
