@@ -1,3 +1,3 @@
 [workspace]
-members=["01-hello", "02-unit-test", "03-primitives",]
+members = ["01-hello", "02-unit-test", "03-primitives", ]
 resolver = "2"
