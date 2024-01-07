@@ -22,7 +22,7 @@ test: format
 	cargo test
 
 build: format
-	cargo build
+	cargo build -vvv
 
 run: format
 	cargo run
